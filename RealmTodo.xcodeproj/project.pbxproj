@@ -3,18 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B56D39B7FBA501C8548A3D86 /* Pods_RealmTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB967A71840BB6C87723535D /* Pods_RealmTodo.framework */; };
 		D60A7835233DC06C005DA1AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A7834233DC06C005DA1AD /* AppDelegate.swift */; };
 		D60A7837233DC06C005DA1AD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A7836233DC06C005DA1AD /* SceneDelegate.swift */; };
 		D60A7839233DC06C005DA1AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A7838233DC06C005DA1AD /* ViewController.swift */; };
-		D60A783C233DC06C005DA1AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60A783A233DC06C005DA1AD /* Main.storyboard */; };
 		D60A783E233DC06C005DA1AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D60A783D233DC06C005DA1AD /* Assets.xcassets */; };
 		D60A7841233DC06C005DA1AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60A783F233DC06C005DA1AD /* LaunchScreen.storyboard */; };
 		D60A784C233DC06C005DA1AD /* RealmTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A784B233DC06C005DA1AD /* RealmTodoTests.swift */; };
 		D60A7857233DC06C005DA1AD /* RealmTodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A7856233DC06C005DA1AD /* RealmTodoUITests.swift */; };
+		D60A7866233DD09D005DA1AD /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A7865233DD09D005DA1AD /* Todo.swift */; };
+		D60A7869233DD7B8005DA1AD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A7868233DD7B8005DA1AD /* User.swift */; };
+		D60A786F234177A3005DA1AD /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A786E234177A3005DA1AD /* AddViewController.swift */; };
+		D60A787E2344311A005DA1AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60A787C2344311A005DA1AD /* Main.storyboard */; };
+		D60A787F2344311A005DA1AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60A787C2344311A005DA1AD /* Main.storyboard */; };
+		D60A78802344311A005DA1AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D60A787C2344311A005DA1AD /* Main.storyboard */; };
+		D60A789A234475A1005DA1AD /* TestCamera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D60A7899234475A1005DA1AD /* TestCamera.jpg */; };
+		D60A789B234475A1005DA1AD /* TestCamera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D60A7899234475A1005DA1AD /* TestCamera.jpg */; };
+		D60A789C234475A1005DA1AD /* TestCamera.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D60A7899234475A1005DA1AD /* TestCamera.jpg */; };
+		D60A789E23447735005DA1AD /* iconLibrary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D60A789D23447734005DA1AD /* iconLibrary.jpg */; };
+		D60A789F23447735005DA1AD /* iconLibrary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D60A789D23447734005DA1AD /* iconLibrary.jpg */; };
+		D60A78A023447735005DA1AD /* iconLibrary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D60A789D23447734005DA1AD /* iconLibrary.jpg */; };
+		D60A78A2234477DB005DA1AD /* iconSave.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D60A78A1234477DB005DA1AD /* iconSave.jpg */; };
+		D60A78A3234477DB005DA1AD /* iconSave.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D60A78A1234477DB005DA1AD /* iconSave.jpg */; };
+		D60A78A4234477DB005DA1AD /* iconSave.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D60A78A1234477DB005DA1AD /* iconSave.jpg */; };
+		D60A78A623447C20005DA1AD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A78A523447C20005DA1AD /* FirstViewController.swift */; };
+		D60A78A723447C20005DA1AD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A78A523447C20005DA1AD /* FirstViewController.swift */; };
+		D60A78A823447C20005DA1AD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A78A523447C20005DA1AD /* FirstViewController.swift */; };
+		D60A78E92346F732005DA1AD /* heartEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = D60A78E72346F732005DA1AD /* heartEmpty.png */; };
+		D60A78EA2346F732005DA1AD /* heartEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = D60A78E72346F732005DA1AD /* heartEmpty.png */; };
+		D60A78EB2346F732005DA1AD /* heartEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = D60A78E72346F732005DA1AD /* heartEmpty.png */; };
+		D60A78EC2346F732005DA1AD /* heartFill.png in Resources */ = {isa = PBXBuildFile; fileRef = D60A78E82346F732005DA1AD /* heartFill.png */; };
+		D60A78ED2346F732005DA1AD /* heartFill.png in Resources */ = {isa = PBXBuildFile; fileRef = D60A78E82346F732005DA1AD /* heartFill.png */; };
+		D60A78EE2346F732005DA1AD /* heartFill.png in Resources */ = {isa = PBXBuildFile; fileRef = D60A78E82346F732005DA1AD /* heartFill.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +59,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34E31F9CDF2999FFBBD0DB00 /* Pods-RealmTodo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTodo.debug.xcconfig"; path = "Target Support Files/Pods-RealmTodo/Pods-RealmTodo.debug.xcconfig"; sourceTree = "<group>"; };
+		371C99F675DEAC1E3636338D /* Pods-RealmTodo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmTodo.release.xcconfig"; path = "Target Support Files/Pods-RealmTodo/Pods-RealmTodo.release.xcconfig"; sourceTree = "<group>"; };
+		AB967A71840BB6C87723535D /* Pods_RealmTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60A7831233DC06C005DA1AD /* RealmTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60A7834233DC06C005DA1AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D60A7836233DC06C005DA1AD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D60A7838233DC06C005DA1AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D60A783B233DC06C005DA1AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D60A783D233DC06C005DA1AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D60A7840233DC06C005DA1AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D60A7842233DC06C005DA1AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +75,16 @@
 		D60A7852233DC06C005DA1AD /* RealmTodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RealmTodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60A7856233DC06C005DA1AD /* RealmTodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTodoUITests.swift; sourceTree = "<group>"; };
 		D60A7858233DC06C005DA1AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D60A7865233DD09D005DA1AD /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		D60A7868233DD7B8005DA1AD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D60A786E234177A3005DA1AD /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		D60A787D2344311A005DA1AD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = RealmTodo/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D60A7899234475A1005DA1AD /* TestCamera.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = TestCamera.jpg; path = ../../../Downloads/TestCamera.jpg; sourceTree = "<group>"; };
+		D60A789D23447734005DA1AD /* iconLibrary.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iconLibrary.jpg; sourceTree = "<group>"; };
+		D60A78A1234477DB005DA1AD /* iconSave.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iconSave.jpg; sourceTree = "<group>"; };
+		D60A78A523447C20005DA1AD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		D60A78E72346F732005DA1AD /* heartEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heartEmpty.png; sourceTree = "<group>"; };
+		D60A78E82346F732005DA1AD /* heartFill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heartFill.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B56D39B7FBA501C8548A3D86 /* Pods_RealmTodo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +113,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A0BB37C0FBF7A8DDE22936E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				34E31F9CDF2999FFBBD0DB00 /* Pods-RealmTodo.debug.xcconfig */,
+				371C99F675DEAC1E3636338D /* Pods-RealmTodo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		91DF91BEAF51B8BAA905EE09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB967A71840BB6C87723535D /* Pods_RealmTodo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D60A7828233DC06B005DA1AD = {
 			isa = PBXGroup;
 			children = (
+				D60A78E72346F732005DA1AD /* heartEmpty.png */,
+				D60A78E82346F732005DA1AD /* heartFill.png */,
+				D60A7899234475A1005DA1AD /* TestCamera.jpg */,
+				D60A78A1234477DB005DA1AD /* iconSave.jpg */,
+				D60A789D23447734005DA1AD /* iconLibrary.jpg */,
+				D60A787C2344311A005DA1AD /* Main.storyboard */,
+				D60A78A523447C20005DA1AD /* FirstViewController.swift */,
 				D60A7833233DC06C005DA1AD /* RealmTodo */,
 				D60A784A233DC06C005DA1AD /* RealmTodoTests */,
 				D60A7855233DC06C005DA1AD /* RealmTodoUITests */,
 				D60A7832233DC06C005DA1AD /* Products */,
+				7A0BB37C0FBF7A8DDE22936E /* Pods */,
+				91DF91BEAF51B8BAA905EE09 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +162,11 @@
 		D60A7833233DC06C005DA1AD /* RealmTodo */ = {
 			isa = PBXGroup;
 			children = (
+				D60A7864233DD048005DA1AD /* Model */,
 				D60A7834233DC06C005DA1AD /* AppDelegate.swift */,
 				D60A7836233DC06C005DA1AD /* SceneDelegate.swift */,
 				D60A7838233DC06C005DA1AD /* ViewController.swift */,
-				D60A783A233DC06C005DA1AD /* Main.storyboard */,
+				D60A786E234177A3005DA1AD /* AddViewController.swift */,
 				D60A783D233DC06C005DA1AD /* Assets.xcassets */,
 				D60A783F233DC06C005DA1AD /* LaunchScreen.storyboard */,
 				D60A7842233DC06C005DA1AD /* Info.plist */,
@@ -128,6 +192,15 @@
 			path = RealmTodoUITests;
 			sourceTree = "<group>";
 		};
+		D60A7864233DD048005DA1AD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D60A7865233DD09D005DA1AD /* Todo.swift */,
+				D60A7868233DD7B8005DA1AD /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D60A785B233DC06C005DA1AD /* Build configuration list for PBXNativeTarget "RealmTodo" */;
 			buildPhases = (
+				141F46941B445E7064B37B84 /* [CP] Check Pods Manifest.lock */,
 				D60A782D233DC06C005DA1AD /* Sources */,
 				D60A782E233DC06C005DA1AD /* Frameworks */,
 				D60A782F233DC06C005DA1AD /* Resources */,
+				87C68A44574ACE490D75029F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,8 +308,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D60A7841233DC06C005DA1AD /* LaunchScreen.storyboard in Resources */,
+				D60A789E23447735005DA1AD /* iconLibrary.jpg in Resources */,
+				D60A78E92346F732005DA1AD /* heartEmpty.png in Resources */,
+				D60A78EC2346F732005DA1AD /* heartFill.png in Resources */,
 				D60A783E233DC06C005DA1AD /* Assets.xcassets in Resources */,
-				D60A783C233DC06C005DA1AD /* Main.storyboard in Resources */,
+				D60A78A2234477DB005DA1AD /* iconSave.jpg in Resources */,
+				D60A789A234475A1005DA1AD /* TestCamera.jpg in Resources */,
+				D60A787E2344311A005DA1AD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +322,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60A789B234475A1005DA1AD /* TestCamera.jpg in Resources */,
+				D60A78ED2346F732005DA1AD /* heartFill.png in Resources */,
+				D60A787F2344311A005DA1AD /* Main.storyboard in Resources */,
+				D60A789F23447735005DA1AD /* iconLibrary.jpg in Resources */,
+				D60A78A3234477DB005DA1AD /* iconSave.jpg in Resources */,
+				D60A78EA2346F732005DA1AD /* heartEmpty.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +335,58 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60A789C234475A1005DA1AD /* TestCamera.jpg in Resources */,
+				D60A78EE2346F732005DA1AD /* heartFill.png in Resources */,
+				D60A78802344311A005DA1AD /* Main.storyboard in Resources */,
+				D60A78A023447735005DA1AD /* iconLibrary.jpg in Resources */,
+				D60A78A4234477DB005DA1AD /* iconSave.jpg in Resources */,
+				D60A78EB2346F732005DA1AD /* heartEmpty.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		141F46941B445E7064B37B84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RealmTodo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87C68A44574ACE490D75029F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealmTodo/Pods-RealmTodo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RealmTodo/Pods-RealmTodo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RealmTodo/Pods-RealmTodo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D60A782D233DC06C005DA1AD /* Sources */ = {
@@ -261,7 +395,11 @@
 			files = (
 				D60A7839233DC06C005DA1AD /* ViewController.swift in Sources */,
 				D60A7835233DC06C005DA1AD /* AppDelegate.swift in Sources */,
+				D60A786F234177A3005DA1AD /* AddViewController.swift in Sources */,
+				D60A7866233DD09D005DA1AD /* Todo.swift in Sources */,
+				D60A7869233DD7B8005DA1AD /* User.swift in Sources */,
 				D60A7837233DC06C005DA1AD /* SceneDelegate.swift in Sources */,
+				D60A78A623447C20005DA1AD /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D60A784C233DC06C005DA1AD /* RealmTodoTests.swift in Sources */,
+				D60A78A723447C20005DA1AD /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D60A7857233DC06C005DA1AD /* RealmTodoUITests.swift in Sources */,
+				D60A78A823447C20005DA1AD /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,20 +437,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D60A783A233DC06C005DA1AD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D60A783B233DC06C005DA1AD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D60A783F233DC06C005DA1AD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D60A7840233DC06C005DA1AD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D60A787C2344311A005DA1AD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D60A787D2344311A005DA1AD /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -432,6 +572,7 @@
 		};
 		D60A785C233DC06C005DA1AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34E31F9CDF2999FFBBD0DB00 /* Pods-RealmTodo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +591,7 @@
 		};
 		D60A785D233DC06C005DA1AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 371C99F675DEAC1E3636338D /* Pods-RealmTodo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
