@@ -7,15 +7,21 @@
 //
 
 import UIKit
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate{
-//一覧開くと落ちるsignal SIGABRT 
-
-
+    
+    var window: UIWindow?
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // あとからRealm Objectの構造を変えた場合に使用する可能性があるもの
+        let defaultConfig = Realm.Configuration.init(schemaVersion: 0, migrationBlock: nil)
+        Realm.Configuration.defaultConfiguration = defaultConfig
+
         return true
     }
 

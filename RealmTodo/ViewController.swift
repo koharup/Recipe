@@ -9,21 +9,28 @@
 import UIKit
 import RealmSwift
 
-class ViewController: UIViewController,UITableViewDataSource{
+
+class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate{
     
     var todoItems: Results<Todo>!
     @IBOutlet weak var table: UITableView!
     
     
     override func viewDidLoad() {
-     super.viewDidLoad()
-        //一覧の実行時にエラー
+        super.viewDidLoad()
+        
+        table.register(UINib(nibName: "AllMenuTableViewCell", bundle: nil), forCellReuseIdentifier: "AllMenuTableViewCell")
         table.dataSource = self
-      let realm = try! Realm()
-     todoItems = realm.objects(Todo.self)
+        table.delegate = self
+        
+        let realm = try! Realm()
+        todoItems = realm.objects(Todo.self)
         
         table.reloadData()
+        
+        
     }
+    
     
     //画面が表示される前に実行される処理
     override func viewWillAppear(_ animated: Bool) {
@@ -31,20 +38,38 @@ class ViewController: UIViewController,UITableViewDataSource{
         table.reloadData()
     }
     
-    
-     
-    //セル数の宣言
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return todoItems.count //総todo数を返している
+    //遷移
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // セルの選択を解除
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        // 別の画面に遷移
+        performSegue(withIdentifier: "toDetailViewController", sender: indexPath.row)
     }
     
     
+    
+    //ここでtableviewに情報を写している
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let object = todoItems[indexPath.row]
-        cell.textLabel?.text = object.title
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "AllMenuTableViewCell", for: indexPath) as! AllMenuTableViewCell
+        
+        cell.titlelabel.text = todoItems[indexPath.row].title
+        
+        let heartArray = [cell.heart1,cell.heart2,cell.heart3,cell.heart4,cell.heart5]
+        for i in 0 ..< todoItems[indexPath.row].rate {
+            heartArray[i]?.image = UIImage(named:"heartFill")!
+        }
+        //cell.postImageView.kf.setImage(with: posts[indexPath.row].imagePath)
         
         return cell
+    }
+    
+    
+    //セル数の宣言
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return todoItems.count //総todo数を返している
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -54,65 +79,20 @@ class ViewController: UIViewController,UITableViewDataSource{
             table.reloadData()
         }
     }
-   func deleteTodo(at index: Int){
+    func deleteTodo(at index: Int){
         
         let realm = try! Realm()
         try! realm.write {
             realm.delete(todoItems[index])
-        
+            
+        }
+         
     }
     
-    
-    
-    
-    
-    
-   // private var realm: Realm!
-    
-  
-        
-        /*作成
-        let tanaka = User()
-        tanaka.id = 1
-        tanaka.name = "田中"
-        tanaka.createdAt = NSDate().timeIntervalSince1970
-        try! realm.write {
-            realm.add(tanaka)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailViewController"{
+            let nextVC = segue.destination as? DetailViewController
+            nextVC?.selectedTodo = todoItems[sender as! Int]
         }
-        //作成2
-        let yamada = User()
-        yamada.id = 2
-        yamada.name = "山田"
-        yamada.createdAt = NSDate().timeIntervalSince1970
-        try! realm.write {
-            realm.add(yamada)
-        }
-        //参照
-        let users = realm.objects(User.self).filter("id != 0").sorted(byKeyPath: "id")
-        for user in users {
-            print(user.name)
-        }
-        //更新
-        let hoge = realm.objects(User.self).last!
-        try! realm.write {
-            hoge.name = "ほげ"
-        }
-        //参照
-        for user in realm.objects(User.self).filter("id != 0").sorted(byKeyPath: "id"){
-            print(user.name)
-        }
-        //削除
-        let lastUser = realm.objects(User.self).last!
-        try! realm.write {
-            realm.delete(lastUser)
-        }
-        //参照
-        for user in realm.objects(User.self).filter("id != 0").sorted(byKeyPath: "id"){
-            print(user.name)
-        }*/
-    
-    
-   
-
-}
+    }
 }

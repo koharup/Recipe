@@ -10,24 +10,15 @@ import UIKit
 
 class FirstViewController: UIViewController {
     @IBOutlet var circleButton: UIButton!
-    
-    
-    
-   
-    
-
-    override func viewDidLoad() {
+     override func viewDidLoad() {
         super.viewDidLoad()
         circleButton.layer.cornerRadius = 47
         
         
+        
         }
     }
-    
-    
-    
-
-    /*
+      /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
