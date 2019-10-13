@@ -40,21 +40,17 @@ class DetailViewController: UIViewController {
         print(selectedTodo.memo)
         print(selectedTodo.url)
         print(selectedTodo.imageData)
+        print(selectedTodo.rate)
         
         name.text = selectedTodo.title
         comment.text = selectedTodo.memo
         url.text = selectedTodo.url
         photo.image = UIImage(data: selectedTodo.imageData!)
         
-        let realm = try! Realm()
-               todoItems = realm.objects(Todo.self)
         
         let heartArray = [heart1,heart2,heart3,heart4,heart5]
         for i in 0 ..< todoItems.rate {
                        heartArray[i]?.image = UIImage(named:"heartFill")!
-        
-       
-    
         
         }
         
@@ -71,11 +67,11 @@ class DetailViewController: UIViewController {
     }
     
    
+   
     
 
     
+
 
 
 }
-
-
