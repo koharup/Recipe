@@ -31,14 +31,8 @@ class DetailViewController: UIViewController {
     
     var selectedTodo :Todo!
     
-   
     //ハート
     
-    
-   
-          
-    
-
     override func viewDidLoad() {
        
         super.viewDidLoad()
@@ -52,18 +46,19 @@ class DetailViewController: UIViewController {
         url.text = selectedTodo.url
         photo.image = UIImage(data: selectedTodo.imageData!)
         
-        //let heartArray = [heart1,heart2,heart3,heart4,heart5]
-        //for i in 0 ..< todoItems.rate {
-            //heartArray[i]?.image = UIImage(named:"heartFill")!
-        //}
+        let realm = try! Realm()
+               todoItems = realm.objects(Todo.self)
+        
+        let heartArray = [heart1,heart2,heart3,heart4,heart5]
+        for i in 0 ..< todoItems.rate {
+                       heartArray[i]?.image = UIImage(named:"heartFill")!
+        
+       
+    
         
         }
         
-        
-        
-        
-    
-        
+       
         
         
     /*     let hearts = [heart1, heart2, heart3, heart4, heart5]
@@ -78,14 +73,9 @@ class DetailViewController: UIViewController {
    
     
 
-    /*
-    // MARK: - Navigation
+    
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+
+}
 
 

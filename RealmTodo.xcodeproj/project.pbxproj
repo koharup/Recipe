@@ -37,9 +37,6 @@
 		D60A790723488AC8005DA1AD /* AllMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60A790223488AC8005DA1AD /* AllMenuTableViewCell.xib */; };
 		D60A790823488AC8005DA1AD /* AllMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60A790223488AC8005DA1AD /* AllMenuTableViewCell.xib */; };
 		D60A794C234A3766005DA1AD /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60A794B234A3766005DA1AD /* DetailViewController.swift */; };
-		D60A794E234A43FA005DA1AD /* homemenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D60A794D234A43FA005DA1AD /* homemenu.jpg */; };
-		D60A794F234A43FA005DA1AD /* homemenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D60A794D234A43FA005DA1AD /* homemenu.jpg */; };
-		D60A7950234A43FA005DA1AD /* homemenu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D60A794D234A43FA005DA1AD /* homemenu.jpg */; };
 		D60A7952234ACC37005DA1AD /* first 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D60A7951234ACC36005DA1AD /* first 2.jpg */; };
 		D60A7953234ACC37005DA1AD /* first 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D60A7951234ACC36005DA1AD /* first 2.jpg */; };
 		D60A7954234ACC37005DA1AD /* first 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D60A7951234ACC36005DA1AD /* first 2.jpg */; };
@@ -51,6 +48,7 @@
 		D6FBBDB02351882200693CCB /* heartFill.png in Resources */ = {isa = PBXBuildFile; fileRef = D6FBBDAF2351882200693CCB /* heartFill.png */; };
 		D6FBBDB22351926800693CCB /* Gfook.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6FBBDB12351926800693CCB /* Gfook.jpg */; };
 		D6FBBDB6235198B100693CCB /* G_spoon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D6FBBDB5235198B100693CCB /* G_spoon.jpg */; };
+		D6FBBDBC2352DD4800693CCB /* MyUINavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FBBDBB2352DD4800693CCB /* MyUINavigationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,7 +95,6 @@
 		D60A790123488AC8005DA1AD /* AllMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllMenuTableViewCell.swift; sourceTree = "<group>"; };
 		D60A790223488AC8005DA1AD /* AllMenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AllMenuTableViewCell.xib; sourceTree = "<group>"; };
 		D60A794B234A3766005DA1AD /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = /Users/kohari/Desktop/iPhone/RealmTodo/RealmTodo/Model/DetailViewController.swift; sourceTree = "<absolute>"; };
-		D60A794D234A43FA005DA1AD /* homemenu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = homemenu.jpg; sourceTree = "<group>"; };
 		D60A7951234ACC36005DA1AD /* first 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "first 2.jpg"; sourceTree = "<group>"; };
 		D6B64E15234E2B9400CCE33F /* library5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = library5.jpg; sourceTree = "<group>"; };
 		D6B64E17234E2BE200CCE33F /* camera5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = camera5.jpg; sourceTree = "<group>"; };
@@ -107,6 +104,7 @@
 		D6FBBDAF2351882200693CCB /* heartFill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = heartFill.png; path = ../../../heartFill.png; sourceTree = "<group>"; };
 		D6FBBDB12351926800693CCB /* Gfook.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Gfook.jpg; sourceTree = "<group>"; };
 		D6FBBDB5235198B100693CCB /* G_spoon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = G_spoon.jpg; sourceTree = "<group>"; };
+		D6FBBDBB2352DD4800693CCB /* MyUINavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUINavigationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,12 +181,12 @@
 				D6B64E19234E2BE900CCE33F /* save5.jpg */,
 				D6B64E17234E2BE200CCE33F /* camera5.jpg */,
 				D6B64E15234E2B9400CCE33F /* library5.jpg */,
-				D60A794D234A43FA005DA1AD /* homemenu.jpg */,
 				D60A7951234ACC36005DA1AD /* first 2.jpg */,
 				D60A78F42347704D005DA1AD /* Fook.jpg */,
 				D60A78F32347704C005DA1AD /* Spoon.jpg */,
 				D6FBBDAF2351882200693CCB /* heartFill.png */,
 				D60A78E72346F732005DA1AD /* heartEmpty.png */,
+				D6FBBDBB2352DD4800693CCB /* MyUINavigationViewController.swift */,
 				D60A787C2344311A005DA1AD /* Main.storyboard */,
 				D60A78A523447C20005DA1AD /* FirstViewController.swift */,
 				D60A794B234A3766005DA1AD /* DetailViewController.swift */,
@@ -340,7 +338,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D60A7841233DC06C005DA1AD /* LaunchScreen.storyboard in Resources */,
-				D60A794E234A43FA005DA1AD /* homemenu.jpg in Resources */,
 				D60A78F82347704D005DA1AD /* Fook.jpg in Resources */,
 				D6B64E1A234E2BE900CCE33F /* save5.jpg in Resources */,
 				D60A7952234ACC37005DA1AD /* first 2.jpg in Resources */,
@@ -366,7 +363,6 @@
 				D60A787F2344311A005DA1AD /* Main.storyboard in Resources */,
 				D60A790723488AC8005DA1AD /* AllMenuTableViewCell.xib in Resources */,
 				D60A7953234ACC37005DA1AD /* first 2.jpg in Resources */,
-				D60A794F234A43FA005DA1AD /* homemenu.jpg in Resources */,
 				D60A78F92347704D005DA1AD /* Fook.jpg in Resources */,
 				D60A78EA2346F732005DA1AD /* heartEmpty.png in Resources */,
 			);
@@ -380,7 +376,6 @@
 				D60A78802344311A005DA1AD /* Main.storyboard in Resources */,
 				D60A790823488AC8005DA1AD /* AllMenuTableViewCell.xib in Resources */,
 				D60A7954234ACC37005DA1AD /* first 2.jpg in Resources */,
-				D60A7950234A43FA005DA1AD /* homemenu.jpg in Resources */,
 				D60A78FA2347704D005DA1AD /* Fook.jpg in Resources */,
 				D60A78EB2346F732005DA1AD /* heartEmpty.png in Resources */,
 			);
@@ -437,6 +432,7 @@
 			files = (
 				D60A794C234A3766005DA1AD /* DetailViewController.swift in Sources */,
 				D60A7839233DC06C005DA1AD /* ViewController.swift in Sources */,
+				D6FBBDBC2352DD4800693CCB /* MyUINavigationViewController.swift in Sources */,
 				D60A7835233DC06C005DA1AD /* AppDelegate.swift in Sources */,
 				D60A786F234177A3005DA1AD /* AddViewController.swift in Sources */,
 				D60A7869233DD7B8005DA1AD /* User.swift in Sources */,
